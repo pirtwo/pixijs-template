@@ -1,0 +1,21 @@
+{
+  "name": "pixi-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Ahmad-Fz",
+  "license": "MIT",
+  "dependencies": {
+    "pixi.js": "^5.2.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --mode development --hot",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
