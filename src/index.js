@@ -5,7 +5,9 @@ const app = new PIXI.Application({
 });
 const Sprite = PIXI.Sprite;
 const Container = PIXI.Container;
-const Resources = app.loader.resources;
+const stage = app.view;
+const screen = app.screen;
+const resources = app.loader.resources;
 
 document.body.appendChild(app.view);
 
@@ -14,7 +16,7 @@ app.loader
     .load(setup);
 
 function setup() {
-    const texture = Resources.chicken.texture;
+    const texture = resources.chicken.texture;
     const chickenCnt = new Container();
 
     for (let i = 0; i < 5; i++) {
