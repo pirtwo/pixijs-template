@@ -7,11 +7,12 @@
   "license": "MIT",
   "dependencies": {
     "pixi-sound": "^3.0.4",
-    "pixi.js": "^5.2.4"
+    "pixi.js": "^5.3.0",
+    "pixijs-free-transform-tool": "git+https://github.com/jedateach/pixijs-free-transform-tool.git"
   },
   "devDependencies": {
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
