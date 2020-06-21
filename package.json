@@ -17,7 +17,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --mode development --hot",
+    "dev": "webpack-dev-server --mode development --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
