@@ -1,5 +1,6 @@
 import * as PIXI from "pixi.js";
 import Sound from "pixi-sound";
+import Stats from "stats.js";
 
 const app = new PIXI.Application({
     backgroundColor: 0x1099bb
@@ -7,14 +8,23 @@ const app = new PIXI.Application({
 
 document.body.appendChild(app.view);
 
+function init() {
+    // load assets and fonts
+
+    setup();
+}
+
 function setup() {
-    // game setup   
-}
+    let stats = new Stats();
+    stats.showPanel(0);
+    document.body.appendChild(stats.dom);
 
-function update(delta) {
     // game loop
-}
+    app.ticker.add((delta) => {
+        stats.begin();
 
-app.ticker.add((delta) => {
-    update(delta);
-});
+        // update game here
+
+        stats.end();
+    });
+}
