@@ -6,12 +6,11 @@
   "author": "Ahmad-Fz",
   "license": "MIT",
   "dependencies": {
-    "pixi-sound": "^3.0.4",
-    "pixi.js": "^5.3.0",
-    "pixijs-free-transform-tool": "git+https://github.com/jedateach/pixijs-free-transform-tool.git"
+    "pixi-sound": "^3.0.5",
+    "pixi.js": "^5.3.3"
   },
   "devDependencies": {
-    "webpack": "^4.43.0",
+    "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "stats.js": "^0.17.0"
