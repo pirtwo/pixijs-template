@@ -6,11 +6,9 @@ const app = new PIXI.Application({
     backgroundColor: 0x1099bb
 });
 
-document.body.appendChild(app.view);
-
 function init() {
     // load assets and fonts
-
+    document.body.appendChild(app.view);
     setup();
 }
 
@@ -28,3 +26,5 @@ function setup() {
         stats.end();
     });
 }
+
+init();
