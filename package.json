@@ -10,14 +10,14 @@
     "pixi.js": "^5.3.3"
   },
   "devDependencies": {
+    "stats.js": "^0.17.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
-    "stats.js": "^0.17.0"
+    "webpack-merge": "^5.1.1"
   },
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack-dev-server --mode development --hot",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --hot --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js" 
   }
 }
