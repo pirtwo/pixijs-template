@@ -56,6 +56,24 @@ export function loadWebfonts(families = ['Snippet'], loadCallback = undefined) {
 }
 
 /**
+ * extracts the frames of animation frome tileset.
+ * @param {Object} config 
+ */
+export function loadFrames({
+    tileset,
+    name,
+    format,
+    frames = []
+}) {
+    let animFrames = [];
+
+    for (const frame of frames) {
+        animFrames.push(tileset[`${name}${frame}.${format}`]);
+    }
+    return animFrames;
+}
+
+/**
  * scales canvas based on width and height of the window.
  * https://github.com/kittykatattack/scaleToWindow
  * @param {*} canvas 
