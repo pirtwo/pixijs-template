@@ -7,17 +7,17 @@
   "license": "MIT",
   "dependencies": {
     "pixi-sound": "^3.0.5",
-    "pixi.js": "^5.3.3"
+    "pixi.js": "^6.3.2"
   },
   "devDependencies": {
     "stats.js": "^0.17.0",
-    "webpack": "^5.2.0",
-    "webpack-cli": "^4.1.0",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.2.0"
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0",
+    "webpack-merge": "^5.8.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --host 0.0.0.0 --hot --config webpack.dev.js",
+    "start": "webpack-dev-server --host 0.0.0.0 --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js" 
   }
 }

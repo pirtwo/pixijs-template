@@ -7,12 +7,18 @@ module.exports = merge(common, {
     devtool: 'eval-source-map',
     devServer: {
         hot: true,
-        publicPath: '/js/',
-        contentBase: path.join(__dirname, 'public'),
-        watchContentBase: true,
-        stats: {
-            children: false,
-            maxModules: 0
-        }
+        static:[
+            {
+                directory: path.join(__dirname, 'build/js'),
+                publicPath: '/js/',
+                watch: true
+            },
+            {
+                directory: path.join(__dirname, 'public'),
+                publicPath: '/',
+                watch: true
+            }
+        ],
+        watchFiles: ['src/index.js']
     }
 });
